@@ -1,0 +1,16 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Entorno y secretos
+.venv/
+.env
+
+# Archivos generados durante la práctica
+ops_company.db
+*.pyc
+.ipynb_checkpoints/
