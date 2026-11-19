@@ -46,24 +46,20 @@ Ejecuta el siguiente comando dentro de la carpeta del proyecto. `uv` descargará
 uv sync
 ```
 
-### 3. Configurar tu clave de API de OpenAI
-
-1. Crea una copia del archivo `.env.example` y llámala `.env`:
-* **En macOS / Linux:**
-```bash
-cp .env.example .env
-```
-
-
-* **En Windows (PowerShell):**
-```powershell
-copy .env.example .env
-```
-
-
-
-
-2. Abre el archivo `.env` con cualquier editor de texto (o desde VS Code) y sustituye `pon_aqui_tu_clave_de_openai` por tu clave real (`sk-...`). Guarda el archivo.
+### 3. Configurar tu clave gratuita de API de Gemini
+No necesitas cuenta de pago. Puedes obtener una clave gratuita en 1 minuto:
+1. Entra en [Google AI Studio](https://aistudio.google.com/) con tu cuenta de Google.
+2. Haz clic en **Get API key** $\rightarrow$ **Create API key** y copia la clave generada (`AIzaSy...`).
+3. Crea una copia del archivo `.env.example` y llámala `.env`:
+   * **En macOS / Linux:**
+     ```bash
+     cp .env.example .env
+     ```
+   * **En Windows (PowerShell):**
+     ```powershell
+     copy .env.example .env
+     ```
+4. Abre el archivo `.env` y sustituye `pon_aqui_tu_clave_gratuita_de_google_ai_studio` por tu clave real. Guarda el archivo.
 
 ---
 
