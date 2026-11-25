@@ -14,3 +14,9 @@ wheels/
 ops_company.db
 *.pyc
 .ipynb_checkpoints/
+
+# BBDD locales
+langgraph_checkpoints.db
+langgraph_checkpoints.db-shm
+langgraph_checkpoints.db-wal
+long_term_memory.db

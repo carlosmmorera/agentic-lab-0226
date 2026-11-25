@@ -14,12 +14,12 @@ Antes de empezar, asegúrate de tener instalado en tu ordenador:
 
 * **En macOS o Linux** (abre la Terminal y ejecuta):
     ```bash
-    curl -LsSf [https://astral.sh/uv/install.sh](https://astral.sh/uv/install.sh) | sh
+    curl -LsSf https://astral.sh/uv/install.sh | sh
     ```
 
 * **En Windows** (abre PowerShell y ejecuta):
     ```powershell
-    powershell -ExecutionPolicy ByPass -c "irm [https://astral.sh/uv/install.ps1](https://astral.sh/uv/install.ps1) | iex"
+    powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.sh | iex"
     ```
 
 
@@ -91,3 +91,15 @@ Se abrirá una pestaña en tu navegador. Haz doble clic sobre **`sesion_07_works
 * **Error `AuthenticationError` o `OPENAI_API_KEY not found`:** Asegúrate de haber renombrado correctamente `.env.example` a `.env` (sin extensión `.txt` oculta) y de haber ejecutado la **Celda 1** del notebook donde se llama a `load_dotenv()`.
 * **No me aparece el entorno `.venv` en VS Code:** Abre la paleta de comandos (`Ctrl + Shift + P` en Windows o `Cmd + Shift + P` en Mac), escribe `Developer: Reload Window` y pulsa Enter.
 * **Error `RuntimeError: asyncio.run() cannot be called from a running event loop`:** En Jupyter no uses `asyncio.run(...)`; ejecuta directamente `await run_operations_copilot(...)` en la celda.
+
+---
+
+## Sesión: Orquestación Cíclica (LangGraph) y Memoria a Largo Plazo
+
+### Actualización rápida del entorno
+Si ya clonaste el repositorio en la sesión anterior, descarga los nuevos notebooks y sincroniza las librerías de LangGraph:
+
+```bash
+git pull
+uv sync
+```
